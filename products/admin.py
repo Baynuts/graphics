@@ -11,6 +11,8 @@ class ProductAdmin(admin.ModelAdmin):
         'price',
         'rating',
         'image',
+        'has_customtext',
+        'has_customtext2',
     )
 
     ordering = ('sku',)
