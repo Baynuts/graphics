@@ -26,7 +26,7 @@ SECRET_KEY = 'w8l2%vcst!5+(a&7s!i38%35_-ex=!5)n&0pdm*u4889-0wi)='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['graphicz-drb.herokuapp.com', 'localhost', 'graphicz-drb.herokuapp.com']
 
 
 # Application definition
