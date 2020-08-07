@@ -10,22 +10,68 @@ body {
     font-family: 'Lato';
 }
 
-/* from Bulma */
+#topnav {
+    background-color: #3B3B3B;
+    font-family: Oswald;
+    text-transform: uppercase;
+}
+
+.std-font {
+    font-family: 'Lato';
+}
+
+.nav-bg {
+    background-color: #3B3B3B!important;
+    border-top: 1px solid black;
+
+}
+
 .icon {
     align-items: center;
     display: inline-flex;
     justify-content: center;
     height: 1.5rem;
     width: 1.5rem;
+    color: #FDD000;
 }
 
-.logo-font {
+.logo-box {
+    height: 120px;
+}
+
+.fa-yel {
+    color: #FDD000;
+}
+
+.navbar {
+    font-family: Oswald;
+    text-transform: uppercase;
+    color: #ffff;
+}
+
+.navbar a {
+    color: #fff;
+}
+
+.navbar a:hover {
+    color: #FDD000!important;
+}
+
+a.dropdown-item {
+    color: #000;
+}
+
+#delivery-banner {
+    font-family: 'Lato';
+    background-color: #fff;
     text-transform: uppercase;
 }
 
-.main-logo-link {
-    width: fit-content;
-}
+
+
+
+
+
 
 .shop-now-button {
     background: black;
