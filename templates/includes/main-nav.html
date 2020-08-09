@@ -18,39 +18,44 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="nav-link mr-5" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Clothing
+            <a class="nav-link mr-5" href="#" id="advertising-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Advertising Media
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="{% url 'products' %}?category=category_1" class="dropdown-item">Category 1</a>
-                <a href="{% url 'products' %}?category=category_2" class="dropdown-item">Category 2</a>
-                <a href="{% url 'products' %}?category=category_3" class="dropdown-item">Category 3</a>
-                <a href="{% url 'products' %}?category=category_4" class="dropdown-item">Category 4</a>
+            <div class="dropdown-menu border-0" aria-labelledby="advertising-link">
+                <a href="{% url 'products' %}?category=category_1" class="dropdown-item">Menus</a>
+                <a href="{% url 'products' %}?category=category_2" class="dropdown-item">Flyers</a>
+                <a href="{% url 'products' %}?category=category_3" class="dropdown-item">Business Cards</a>
+                <a href="{% url 'products' %}?category=category_4" class="dropdown-item">Large Format Media</a>
                 <a href="{% url 'products' %}?category=category_1,category_2,category_3,category_4" class="dropdown-item">All Category</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="nav-link mr-5" href="#" id="homeware-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Homeware
+            <a class="nav-link mr-5" href="#" id="personalised-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Personalised Artwork
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="{% url 'products' %}?category=category_5" class="dropdown-item">Category 5</a>
+                <a href="{% url 'products' %}?category=category_5" class="dropdown-item">Business Cards</a>
                 <a href="{% url 'products' %}?category=category_6" class="dropdown-item">Category 6</a>
                 <a href="{% url 'products' %}?category=category_7" class="dropdown-item">Category 7</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="nav-link" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Special Offers
+            <a class="nav-link mr-5" href="#" id="website-design-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Website Design
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
+                <a href="" class="dropdown-item">Logo creation</a>
                 <a href="" class="dropdown-item">Deals</a>
                 <a href="" class="dropdown-item">Clearance</a>
                 <a href="" class="dropdown-item">All Specials</a>
             </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link" href="{% url 'portfolio' %}" id="portfolio-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Portfolio
+            </a>
         </li>
     </ul>
 </div>
