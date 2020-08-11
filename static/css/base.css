@@ -7,24 +7,37 @@ body {
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
-    font-family: 'Lato';
+    font-family: 'Open Sans', sans-serif;
 }
 
 #topnav {
-    background-color: #3B3B3B;
-    font-family: Oswald;
+    background-color: #f9b61e;
+    font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
 }
 
+.top-txt {
+    font-size: 0.75rem;
+    padding-left: 10px;
+    color: #fff;
+}
+
+.search-bx {
+    width: 300px;
+    margin-top: 3px;
+}
+
+
+
+#bottomnav {
+    color: #898989;
+    background-color: #ffffff;
+}
+
 .std-font {
-    font-family: 'Lato';
+    font-family: 'Open Sans', sans-serif;
 }
 
-.nav-bg {
-    background-color: #3B3B3B!important;
-    border-top: 1px solid black;
-
-}
 
 .icon {
     align-items: center;
@@ -32,11 +45,12 @@ body {
     justify-content: center;
     height: 1.5rem;
     width: 1.5rem;
-    color: #FDD000;
+    color: #Ffffff;
 }
 
 .logo-box {
-    height: 120px;
+    height: 85px;
+    margin-left: 20%;
 }
 
 .fa-yel {
@@ -44,17 +58,19 @@ body {
 }
 
 .navbar {
-    font-family: Oswald;
+    font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
-    color: #ffff;
+    font-weight: 400;
+    font-size: 0.9em;
+    padding-top: 20px;
 }
 
 .navbar a {
-    color: #fff;
+    color: #898989;
 }
 
 .navbar a:hover {
-    color: #FDD000!important;
+    border-bottom: 4px solid #fdd000;
 }
 
 a.dropdown-item {
@@ -62,11 +78,15 @@ a.dropdown-item {
 }
 
 #delivery-banner {
-    font-family: 'Lato';
-    background-color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f9f9fa;
     text-transform: uppercase;
 }
 
+ h4.logo-font {
+    font-size: 13px;
+    font-weight: 600;
+ }
 
 
 
