@@ -27,7 +27,18 @@ body {
     margin-top: 3px;
 }
 
+.search-box {
+    width:350px;
+}
 
+.dropdown-item {
+    font-size: 0.8em!important;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    color: #000;
+    background-color: #f9b61e;
+}
 
 #bottomnav {
     color: #898989;
@@ -73,6 +84,12 @@ body {
     border-bottom: 4px solid #fdd000;
 }
 
+.nav-item a:hover {
+    border-bottom: none;
+
+}
+
+
 a.dropdown-item {
     color: #000;
 }
@@ -84,7 +101,7 @@ a.dropdown-item {
 }
 
  h4.logo-font {
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 600;
  }
 

@@ -36,15 +36,11 @@
     <title>Graphicz {% block extra_title %}{% endblock %}</title>
   </head>
   <body>
-
-
-
-
      <header class="container-fluid fixed-top">
-        <div id="topnav" class="row justify-content-end">
-            <div class="col-12 col-lg-3">
+        <div id="topnav" class="row">
+            <div class="col-lg-8 d-none d-lg-block ">
                 <form method="GET" action="{% url 'products' %}">
-                    <div class="input-group w-100 std-font">
+                    <div class="input-group float-right std-font search-box">
                         <input class="form-control-sm border-0 rounded-0 search-bx" type="text" name="q" placeholder="Search our site">
                         <div class="input-group-append">
                             <button class="form-control-sm border-0 btn btn-white rounded-0" type="submit">
@@ -56,7 +52,7 @@
                     </div>
                 </form>
             </div>
-            <div class="col-12 col-lg-3">
+            <div class="col-lg-4 d-none d-lg-block">
                 <ul class="list-inline list-unstyled text-center my-0">
                     <li class="list-inline-item dropdown">
                         <a class="text-white nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -91,8 +87,8 @@
             </div>
         </div>
 
-        <div id="bottomnav" class="row pt-lg-2 d-none d-lg-flex">
-            <div class="col-12 col-lg-4">
+        <div id="bottomnav" class="row pt-lg-2 d-lg-flex">
+            <div class="col-12 col-lg-4 d-none d-lg-block">
                 <a href="{% url 'home' %}">
                     <img src="/media/graphicz-logo.jpg" class="logo-box">
                 </a>
