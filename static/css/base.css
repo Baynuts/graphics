@@ -8,6 +8,11 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+    .header-container {
+        padding-top: 165px;
+    }
+
+
 #topnav {
     background-color: #f9b61e;
     font-family: 'Montserrat', sans-serif;
@@ -117,11 +122,29 @@ a.dropdown-item {
     color: #000;
 }
 
+#home-image {
+    background-image: url("/media/home-image.jpg")
+
+}
+
+.trans-back {
+    margin: 20px;
+    background-color: #0000007a;;
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
 
 .shop-now-button {
-    background: black;
+    background: #f9b61e;
     color: white;
-    min-width: 260px;
+    min-width: 230px;
 }
 
 .btn-black {
@@ -132,11 +155,9 @@ a.dropdown-item {
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
-.btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
-    background: #222;
-    color: white;
+ {
+    background: #f9b61e;
+    color: black;
 }
 
 .btn-outline-black {
@@ -211,6 +232,23 @@ a.category-badge > span.badge:hover {
 .toast-capper {
     height: 2px;
 }
+
+
+.logo-txt {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    background-color: #f9b61e;
+    color: #fff;
+    padding: 5px;
+    font-family: montserrat;
+}
+
+a.homep-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+
 
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */

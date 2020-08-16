@@ -22,11 +22,10 @@
                 Advertising Media
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="advertising-link">
-                <a href="{% url 'products' %}?category=category_1" class="dropdown-item">Menus</a>
-                <a href="{% url 'products' %}?category=category_2" class="dropdown-item">Flyers</a>
-                <a href="{% url 'products' %}?category=category_3" class="dropdown-item">Business Cards</a>
-                <a href="{% url 'products' %}?category=category_4" class="dropdown-item">Large Format Media</a>
-                <a href="{% url 'products' %}?category=category_1,category_2,category_3,category_4" class="dropdown-item">All Category</a>
+                <a href="{% url 'products' %}?category=menus" class="dropdown-item">Menus</a>
+                <a href="{% url 'products' %}?category=flyers" class="dropdown-item">Flyers</a>
+                <a href="{% url 'products' %}?category=business_cards" class="dropdown-item">Business Cards</a>
+                <a href="{% url 'products' %}?category=menus,flyers,business_cards" class="dropdown-item">All Categories</a>
             </div>
         </li>
 
@@ -34,10 +33,11 @@
             <a class="nav-link mr-3" href="#" id="personalised-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Personalised Artwork
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="{% url 'products' %}?category=category_5" class="dropdown-item">Business Cards</a>
-                <a href="{% url 'products' %}?category=category_6" class="dropdown-item">Category 6</a>
-                <a href="{% url 'products' %}?category=category_7" class="dropdown-item">Category 7</a>
+            <div class="dropdown-menu border-0" aria-labelledby="personalised-artwork-link">
+                <a href="{% url 'products' %}59" class="dropdown-item">Savour The Date</a>
+                <a href="{% url 'products' %}60" class="dropdown-item">Tied The Knot</a>
+                <a href="{% url 'products' %}58" class="dropdown-item">Pixelfy</a>
+                <a href="{% url 'products' %}57" class="dropdown-item">Hello Baby</a>
             </div>
         </li>
 

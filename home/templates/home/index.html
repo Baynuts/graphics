@@ -11,52 +11,60 @@
 {% endblock %}
 
 {% block content %}
-    <div class="position-relative overflow-hidden p-3 m-md-3 text-center bg-light">
+    <div id="home-image" class="position-relative overflow-hidden p-3 m-md-3 text-center bg-light">
         <div class="col-md-5 p-lg-5 mx-auto">
-            <h1 class="display-4 font-weight-normal">Just For You!</h1>
-            <p>Personalised Graphics for your home or business. </p>
-            <p>Make a lasting memory with one of our individual products lovingly made just for you. </p>       
-            <div class="my-5">
-                <h4><a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a></h4>
+            <div class="trans-back">
+                <h1 class="display-4 font-weight-normal text-white">Just For You!</h1>
+                <p class="text-white">Personalised Graphics for your home or business. </p>
+                <p class="text-white">Make a lasting memory with one of our individual products lovingly made just for you. </p>       
+                <div class="my-5">
+                    <h4><a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now <i class="fas fa-caret-right"></i></a></h4>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
 
-      <div class="col-md-4 text-center overflow-hidden">
-        <div class="my-3 p-3 hero-box">
-          <h2 class="logo-txt">Product 1</h2>
-          <p>Product 1</p>
-        </div>
-        <div class="hero-inlay box-shadow mx-auto">Product Image</div>
-      </div>
+
+
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
 
       <div class="col-md-4 hero-box text-center overflow-hidden">
         <div class="my-3 p-3 hero-box">
-          <h2 class="logo-txt">Product 2</h2>
-          <p>Product 2</p>
+            <div class="hero-inlay box-shadow mx-auto">
+                <a href="{% url 'products' %}?category=business_cards">
+                    <img src="/media/business-cards-home.jpg" class="img-fluid"/>
+                </a>
+            </div>
+            <h2 class="logo-txt">
+                <a href="{% url 'products' %}?category=business_cards" class="homep-link">Personalised Business Cards</a>
+            </h2>
+            <p>Make a great first impression with a business card that will make you stand out from the crowd!</p>
         </div>
-        <div class="hero-inlay box-shadow mx-auto">Product Image</div>
       </div>
-
-        <div class="col-md-4 hero-box text-center overflow-hidden">
-        <div class="my-3 p-3 hero-box">
-          <h2 class="logo-txt">Product 3</h2>
-          <p>Product 3</p>
-        </div>
-        <div class="hero-inlay box-shadow mx-auto">Product Image</div>
+      <div class="col-md-4 hero-box text-center overflow-hidden">
+            <div class="my-3 p-3 hero-box">
+                <div class="hero-inlay box-shadow mx-auto">
+                    <a href="{% url 'products' %}?category=leaflets">
+                        <img src="/media/leaflet-home.jpg" class="img-fluid"/>
+                    </a>    
+                </div>
+                <h2 class="logo-txt">
+                    <a href="{% url 'products' %}?category=leaflets">Custom Flyers</a>
+                </h2>
+                <p>Looking to increase business? Get your message across easily with a full colour custom flyer.</p>
+            </div>
       </div>
-
+      <div class="col-md-4 hero-box text-center overflow-hidden">
+            <div class="my-3 p-3 hero-box">
+                <div class="hero-inlay box-shadow mx-auto">
+                    <a href="{% url 'products' %}?category=menus">
+                        <img src="/media/menu-home.jpg" class="img-fluid"/>
+                    </a>
+                </div>
+                <h2 class="logo-txt"><a href="{% url 'products' %}?category=menus">Menus</a></h2>
+                <p>Available in a wide range of styles choose us to make your customers mouths water!! </p>
+            </div>
+      </div>
     </div>
-
-
-
-
-
-
-
-
-
-
 {% endblock %}
