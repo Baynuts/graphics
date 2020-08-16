@@ -23,12 +23,7 @@
             </div>
         </div>
     </div>
-
-
-
-
     <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-
       <div class="col-md-4 hero-box text-center overflow-hidden">
         <div class="my-3 p-3 hero-box">
             <div class="hero-inlay box-shadow mx-auto">
@@ -50,7 +45,7 @@
                     </a>    
                 </div>
                 <h2 class="logo-txt">
-                    <a href="{% url 'products' %}?category=leaflets">Custom Flyers</a>
+                    <a href="{% url 'products' %}?category=leaflets" class="homep-link">Custom Flyers</a>
                 </h2>
                 <p>Looking to increase business? Get your message across easily with a full colour custom flyer.</p>
             </div>
@@ -62,9 +57,56 @@
                         <img src="/media/menu-home.jpg" class="img-fluid"/>
                     </a>
                 </div>
-                <h2 class="logo-txt"><a href="{% url 'products' %}?category=menus">Menus</a></h2>
+                <h2 class="logo-txt"><a href="{% url 'products' %}?category=menus" class="homep-link">Menus</a></h2>
                 <p>Available in a wide range of styles choose us to make your customers mouths water!! </p>
             </div>
       </div>
     </div>
+
+
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+      <div class="col-md-4 hero-box text-center overflow-hidden">
+        <div class="my-3 p-3 hero-box">
+            <div class="hero-inlay box-shadow mx-auto">
+                <a href="{% url 'products' %}?category=business_cards">
+                    <img src="/media/business-cards-home.jpg" class="img-fluid"/>
+                </a>
+            </div>
+            <h2 class="logo-txt">
+                <a href="{% url 'products' %}?category=business_cards" class="homep-link">Personalised Business Cards</a>
+            </h2>
+            <p>Make a great first impression with a business card that will make you stand out from the crowd!</p>
+        </div>
+      </div>
+      <div class="col-md-4 hero-box text-center overflow-hidden">
+            <div class="my-3 p-3 hero-box">
+                <div class="hero-inlay box-shadow mx-auto">
+                    <a href="{% url 'products' %}?category=leaflets">
+                        <img src="/media/leaflet-home.jpg" class="img-fluid"/>
+                    </a>    
+                </div>
+                <h2 class="logo-txt">
+                    <a href="{% url 'products' %}?category=leaflets" class="homep-link">Custom Flyers</a>
+                </h2>
+                <p>Looking to increase business? Get your message across easily with a full colour custom flyer.</p>
+            </div>
+      </div>
+      <div class="col-md-4 hero-box text-center overflow-hidden">
+            <div class="my-3 p-3 hero-box">
+                <div class="hero-inlay box-shadow mx-auto">
+                    <a href="{% url 'products' %}?category=menus">
+                        <img src="/media/menu-home.jpg" class="img-fluid"/>
+                    </a>
+                </div>
+                <h2 class="logo-txt"><a href="{% url 'products' %}?category=menus" class="homep-link">Menus</a></h2>
+                <p>Available in a wide range of styles choose us to make your customers mouths water!! </p>
+            </div>
+      </div>
+    </div>
+
+
+
+
+
+
 {% endblock %}

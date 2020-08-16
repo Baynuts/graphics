@@ -8,9 +8,6 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-    .header-container {
-        padding-top: 165px;
-    }
 
 
 #topnav {
@@ -133,10 +130,22 @@ a.dropdown-item {
     padding: 20px;
 }
 
+/* Footer styles */
 
+footer.text-footer {
+    background-color: #272727;
+    color: #f9f9fa;
+    padding: 20px;
+}
 
+.footer-txt {
+    padding-top: 10px;
+    font-size: 0.8rem;
+}
 
-
+.graphic-yell {
+    color: #f9b61e;
+}
 
 
 
@@ -248,6 +257,9 @@ a.homep-link {
     text-decoration: none;
 }
 
+a:hover.homep-link {
+    color: #000;
+}
 
 
 
@@ -396,9 +408,6 @@ a.homep-link {
 
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
-    .header-container {
-        padding-top: 116px;
-    }
 
     body {
         height: calc(100vh - 116px);
