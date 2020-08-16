@@ -40,6 +40,11 @@ body {
     background-color: #f9b61e;
 }
 
+.dropdown-item:hover {
+    border-bottom: none!important;
+}
+
+
 #bottomnav {
     color: #898989;
     background-color: #ffffff;
@@ -81,11 +86,12 @@ body {
     padding-top: 20px;
 }
 
-.navbar a {
+.nav-item a {
     color: #898989;
+    border-bottom: 4px solid #f9f9fa;
 }
 
-.navbar a:hover {
+.nav-item a:hover, .nav-item a:active {
     border-bottom: 4px solid #fdd000;
 }
 
@@ -97,6 +103,7 @@ body {
 
 a.dropdown-item {
     color: #000;
+    border-bottom: none!important;
 }
 
 #delivery-banner {
@@ -129,6 +136,46 @@ a.dropdown-item {
     background-color: #0000007a;;
     padding: 20px;
 }
+
+.container-home {
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.home-section {
+    text-align: center;
+    border-bottom: 3px solid #f9b61e;
+}
+
+h2.home-section-heading {
+    max-width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    color: #272727;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+}
+
+.icon-block {
+    background-color: #f9f9fa;
+    padding: 20px;
+}
+
+h3.sell-points {
+    font-family: montserrat;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.sell-fa {
+    color: #f9b61e;
+    margin-right: 10px;
+}
+
 
 /* Footer styles */
 
@@ -168,6 +215,15 @@ footer.text-footer {
     background: #f9b61e;
     color: black;
 }
+
+.buy-now-button {
+    background-color: #ffffff;
+    padding: 2px 20px!important;
+    color: #f9b61e;
+    font-weight: 600;
+}
+
+
 
 .btn-outline-black {
     background: white;
