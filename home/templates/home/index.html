@@ -12,7 +12,7 @@
 {% block content %}
     <!--Main homepage image-->
     <div id="home-image" class="position-relative overflow-hidden p-3 m-md-3 text-center bg-light">
-        <div class="col-md-5 p-lg-5 mx-auto">
+        <div class="col-lg-8 col-md-10 p-lg-5 mx-auto">
             <div class="trans-back">
                 <h1 class="display-4 font-weight-normal text-white">Just For You!</h1>
                 <p class="text-white">Personalised Graphics for your home or business. </p>
@@ -24,24 +24,24 @@
         </div>
     </div>
     <!--Reasons to buy-->
-    <div class="container-home">
+    <div class="container-home d-none d-md-block">
         <div class="row">
             <div class="col-4">
                 <div class="icon-block">
                     <h3 class="sell-points"><i class="fas fa-shipping-fast sell-fa"></i>Speedy Despatch</h3>
-                    <p>We aim to get any customised product to you within 7 days of ordering.</p>
+                    <p class="sell-p">We aim to get any customised product to you within 7 days of ordering.</p>
                 </div>
             </div>
             <div class="col-4">
                 <div class="icon-block">
                     <h3 class="sell-points"><i class="fas fa-tools sell-fa"></i>Professional Service</h3>
-                    <p>Our team have over 10 years of graphic design experience under their belt.</p>
+                    <p class="sell-p">Our team have over 10 years of graphic design experience under their belt.</p>
                 </div>
             </div>
             <div class="col-4">
                 <div class="icon-block">
                     <h3 class="sell-points"><i class="fas fa-coins sell-fa"></i>Free Delivery</h3>
-                    <p>All of our products are available with free delivery straight to your door.</p>
+                    <p class="sell-p">All of our products are available with free delivery straight to your door.</p>
                 </div>
             </div>
         </div>
@@ -59,9 +59,11 @@
                     <img src="/media/business-cards-home.jpg" class="img-fluid"/>
                 </a>
             </div>
-            <h2 class="logo-txt">
-                <a href="{% url 'products' %}?category=business_cards" class="homep-link">Personalised Business Cards</a>
-            </h2>
+            <div class="cat-box">
+                <h2 class="logo-txt">
+                    <a href="{% url 'products' %}?category=business_cards" class="homep-link">Business Cards</a>
+                </h2>
+            </div>
             <p>Make a great first impression with a business card that will make you stand out from the crowd!</p>
         </div>
       </div>
@@ -72,9 +74,11 @@
                         <img src="/media/leaflet-home.jpg" class="img-fluid"/>
                     </a>    
                 </div>
-                <h2 class="logo-txt">
-                    <a href="{% url 'products' %}?category=leaflets" class="homep-link">Custom Flyers</a>
-                </h2>
+                <div class="cat-box">
+                    <h2 class="logo-txt">
+                        <a href="{% url 'products' %}?category=leaflets" class="homep-link">Custom Flyers</a>
+                    </h2>
+                </div>
                 <p>Looking to increase business? Get your message across easily with a full colour custom flyer.</p>
             </div>
       </div>
@@ -85,7 +89,9 @@
                         <img src="/media/menu-home.jpg" class="img-fluid"/>
                     </a>
                 </div>
-                <h2 class="logo-txt"><a href="{% url 'products' %}?category=menus" class="homep-link">Menus</a></h2>
+                <div class="cat-box">
+                    <h2 class="logo-txt"><a href="{% url 'products' %}?category=menus" class="homep-link">Menus</a></h2>
+                </div>
                 <p>Available in a wide range of styles, choose us to make your customers mouths water!</p>
             </div>
       </div>
@@ -99,9 +105,11 @@
                     <img src="/media/hello-baby-home.jpg" class="img-fluid"/>
                 </a>
             </div>
+            <div class="cat-box">
             <h2 class="logo-txt">
                 <a href="{% url 'products' %}57" class="homep-link">Hello Baby!</a>
             </h2>
+            </div>
             <p>Mark the arrival of a new addition to your family.</p>
         </div>
       </div>
@@ -112,9 +120,11 @@
                         <img src="/media/pixelfy-home.jpg" class="img-fluid"/>
                     </a>    
                 </div>
-                <h2 class="logo-txt">
-                    <a href="{% url 'products' %}58" class="homep-link">Pixelfy</a>
-                </h2>
+                <div class="cat-box">
+                    <h2 class="logo-txt">
+                        <a href="{% url 'products' %}58" class="homep-link">Pixelfy</a>
+                    </h2>
+                </div>
                 <p>Create a loved ones name in a graphicz way.</p>
             </div>
       </div>
@@ -125,7 +135,9 @@
                         <img src="/media/savour-the-date-home.jpg" class="img-fluid"/>
                     </a>
                 </div>
+                <div class="cat-box">
                 <h2 class="logo-txt"><a href="{% url 'products' %}59" class="homep-link">Savour The Date</a></h2>
+                </div>
                 <p>Everbody has that single date that they love to remember.</p>
             </div>
       </div>
@@ -137,7 +149,7 @@
     <!--Product sections-->
     <div class="container-home">
         <div class="row">
-            <div class="col-3">
+            <div class="col-md-3 col-sm-6">
                 <div class="card h-100 border-0">
                     <a href="{% url 'products' %}54">
                         <img class="card-img-top img-fluid" src="/media/business-card-3.jpg" alt="Full Gloss Premium Business Cards">
@@ -156,7 +168,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-md-3 col-sm-6">
                 <div class="card h-100 border-0">
                     <a href="{% url 'products' %}55">
                         <img class="card-img-top img-fluid" src="/media/business-card-4.jpg" alt="Premium Matt Business Cards">
@@ -175,7 +187,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-md-3 col-sm-6">
                 <div class="card h-100 border-0">
                     <a href="{% url 'products' %}54">
                         <img class="card-img-top img-fluid" src="/media/business-card-3.jpg" alt="Full Gloss Premium Business Cards">
@@ -194,7 +206,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-md-3 col-sm-6">
                 <div class="card h-100 border-0">
                     <a href="{% url 'products' %}55">
                         <img class="card-img-top img-fluid" src="/media/business-card-4.jpg" alt="Premium Matt Business Cards">
