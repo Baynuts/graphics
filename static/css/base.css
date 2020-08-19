@@ -223,7 +223,7 @@ footer.text-footer {
 
 .buy-now-button {
     background-color: #ffffff;
-    padding: 2px 10px!important;
+    padding: 2px 0px!important;
     color: #f9b61e;
     font-weight: 600;
 }
