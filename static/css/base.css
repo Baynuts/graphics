@@ -245,32 +245,38 @@ footer.text-footer {
   object-fit: fill
 }
 
-.img-hover{
-  height: 190px; 
-
-  overflow: hidden;
-}
-
 .img-hover img {
-  transition: transform .9s ease;
+    -webkit-transition: all .9s ease; 
+  	-moz-transition: all .9s ease; 
+  	transition: all .9s ease;
+  	position:relative;
 }
-
-.img-hover:hover img {
-  transform: scale(1.1);
+.img-hover img:hover {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform:translateZ(0) scale(1.1);
+    transform:translatZ(0) scale(1.1);
 }
 
 .prod-img {
 width: 100%;
-
 }
 
+/* Product detail styles */
 
+.nav {
+    margin-top: 30px;
+}
 
+li.nav-item {
+    margin: 0 5px;
+}
 
-
-
-
-
+.tab-content {
+    border-bottom: 2px solid #f9f9fa;
+    padding: 20px 0;
+    font-size: 0.9em;
+}
 
 
 
