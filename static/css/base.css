@@ -92,8 +92,8 @@ body {
     border-bottom: 4px solid #f9f9fa;
 }
 
-.nav-item a:hover, .nav-item a:active {
-    border-bottom: 4px solid #fdd000;
+.nav-item a:hover  {
+    border-bottom: 4px solid #fdd00070;
 }
 
 .dropdown-item a:hover {
@@ -273,9 +273,81 @@ li.nav-item {
 }
 
 .tab-content {
-    border-bottom: 2px solid #f9f9fa;
     padding: 20px 0;
     font-size: 0.9em;
+}
+
+.btn-add {
+    background-color: #dc1d1d;
+    padding: 16px;
+    font-family: montserrat;
+    font-size: 1.2em;
+    color: white;
+    font-weight: 400;
+    line-height: 12px;
+}    
+
+.btn-add:hover {
+    background-color: #b91616;
+    color: white;
+
+}    
+
+
+
+
+.product-title {
+    font-size: 2em;
+}
+
+i.fas.fa-star.mr-1 {
+    color: #fdcc0d;
+    font-size: 1.5em;
+    padding-top: 10px;
+}
+
+
+a.nav-link.active {
+    border-bottom: 4px solid #fdd000;
+}
+
+.qty-add {
+    margin-top: 20px;
+}
+
+.btn-graphicz {
+    background-color: #fdcc0d;
+    color: #555;
+}
+
+.btn-graphicz:hover {
+    background-color: #fdcc0d;
+    color: #fff;
+}
+
+
+
+.btn-qty {
+    background-color: #fdcc0d;
+    padding: 5px;
+    border: 1px solid #f9f9fa;
+}
+
+.form-control {
+    height: 47px;
+    border: 1px solid #f9f9fa;
+}
+
+a.nav-link.grp-link {
+    color: #898989;
+}
+
+
+
+/* Toasts */
+
+.toast {
+    max-width: 330px;
 }
 
 
@@ -422,7 +494,7 @@ a:hover.homep-link {
 }
 
 .bag-notification-wrapper {
-    height: 100px;
+    height: 225px;
     overflow-x: hidden;
     overflow-y: auto;
 }
@@ -530,6 +602,22 @@ a:hover.homep-link {
     max-width: 80%;
   }
 }
+
+@media (max-width: 1300px) {
+
+.navbar {
+    font-size: 0.8em;
+}
+}    
+
+@media (max-width: 1200px) {
+
+.logo-box {
+    height: 75px;
+    margin-left: 10%;
+}
+}    
+
 
 
 
