@@ -293,7 +293,10 @@ li.nav-item {
 
 }    
 
-
+.prod-det-cust {
+    margin-left: -10px;
+    line-height: 12px;
+}
 
 
 .product-title {
