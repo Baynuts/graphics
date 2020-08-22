@@ -10,10 +10,10 @@
                 All Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="" class="dropdown-item">By Price</a>
-                <a href="" class="dropdown-item ">By Rating</a>
-                <a href="" class="dropdown-item ">By Category</a>
-                <a href="" class="dropdown-item">All Products</a>
+                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+                <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
+                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
+                <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
 
@@ -22,10 +22,10 @@
                 Advertising Media
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="advertising-link">
-                <a href="" class="dropdown-item">Menus</a>
-                <a href="" class="dropdown-item">Flyers</a>
-                <a href="" class="dropdown-item">Business Cards</a>
-                <a href="" class="dropdown-item">All Categories</a>
+                <a href="{% url 'products' %}?category=menus" class="dropdown-item">Menus</a>
+                <a href="{% url 'products' %}?category=flyers" class="dropdown-item">Flyers</a>
+                <a href="{% url 'products' %}?category=business_cards" class="dropdown-item">Business Cards</a>
+                <a href="{% url 'products' %}?category=menus,flyers,business_cards" class="dropdown-item">All Categories</a>
             </div>
         </li>
 
