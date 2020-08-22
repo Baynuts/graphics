@@ -13,6 +13,7 @@ class ProductAdmin(admin.ModelAdmin):
         'image',
         'has_customtext',
         'has_customtext2',
+        'dimension',
     )
 
     ordering = ('sku',)
