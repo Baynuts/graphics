@@ -262,6 +262,14 @@ footer.text-footer {
 width: 100%;
 }
 
+/* Porfolio styles */
+
+.card-port {
+    height: 100%;
+}
+
+
+
 /* Product detail styles */
 
 .nav {
