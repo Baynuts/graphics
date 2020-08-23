@@ -10,13 +10,35 @@
 {% endblock %}
 
 {% block content %}
-    <div class="container h-100">
-        <div class="row h-100">
-            <div class="col-7 col-md-6 my-auto">
-                <h1 class="display-4 logo-font text-black">
-                    Portfolio Page
-                </h1>
+<div class="overlay"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col text-center mt-3">
+                <h2 class="logo-font">Portfolio</h2>
             </div>
         </div>
+        <div class="row">
+            {% for portfolio in portfolio %}
+                <div class="col-12 col-md-4">
+                    <div class="card mb-2">
+                        {% if portfolio.image %}
+                        <div class="img-hover">
+                            <img class=" prod-img" src="{{ portfolio.image.url }}" alt="{{ portfolio.name }}">
+                        </div>
+                        {% else %}
+                        <div class="img-hover">
+                            <img class=" prod-img" src="{{ MEDIA_URL }}noimage.png" alt="{{ portfolio.name }}">
+                        </div>
+                        {% endif %}
+                        <div class="card-body">
+                            <h5 class="card-title">{{ portfolio.title }}</h5>
+                            <p class="card-text">{{ portfolio.description }}</p>
+                            <p class="card-text">{{ portfolio.technology }}</p>
+                            <p class="card-text"><a href="{{ portfolio.demo_url }}">View Demo</a></p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>    
     </div>
 {% endblock %}
