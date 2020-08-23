@@ -11,6 +11,7 @@
 
 {% block content %}
 <div class="overlay"></div>
+<div class="container">
     <div class="container-fluid">
         <div class="row">
             <div class="col text-center mt-3">
@@ -20,25 +21,48 @@
         <div class="row">
             {% for portfolio in portfolio %}
                 <div class="col-12 col-md-6">
-                    <div class="card mb-2">
-                        {% if portfolio.image %}
-                        <div class="img-hover">
-                            <img class="card-img-top" src="{{ portfolio.image.url }}" alt="{{ portfolio.name }}">
-                        </div>
-                        {% else %}
-                        <div class="img-hover">
-                            <img class="card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="{{ portfolio.name }}">
-                        </div>
-                        {% endif %}
-                        <div class="card-body">
-                            <h5 class="card-title">{{ portfolio.title }}</h5>
-                            <p class="card-text port-description">{{ portfolio.description }}</p>
-                            <p class="card-text port-tech">{{ portfolio.technology }}</p>
-                            <p class="card-text"><a href="{{ portfolio.demo_url }}">View Demo</a></p>
+                    <div class="card-deck">
+                        <div class="card mb-2">
+                            {% if portfolio.image %}
+                                <img class="card-img-top" src="{{ portfolio.image.url }}" alt="{{ portfolio.name }}">
+                            {% else %}
+                                <img class="card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="{{ portfolio.name }}">
+                            {% endif %}
+                            <div class="card-body">
+                                <h5 class="card-title">{{ portfolio.title }}</h5>
+                                <p class="card-text port-description">{{ portfolio.description }}</p>
+                                <p class="card-text port-tech">{{ portfolio.technology }}</p>
+                                <p class="card-text"><a href="{{ portfolio.demo_url }}">View Demo</a></p>
+                            </div>
                         </div>
                     </div>
                 </div>
             {% endfor %}
         </div>    
     </div>
+
+    <div class="row">
+        <div class="col text-left mt-3">
+            <p class="port-base">
+                These are just a small sample of the work that we have completed for customers here at Graphicz Design. If you have a project that you would like help with whether it be a full site from scratch, an update on a current site or a platform change, please contact us with a short description of the project and one of our representatives will be able to supply you with quotes and our current lead times.
+                We specialise in ecommerce sites and have customers that we have helped on the following platforms:
+                <ul>
+                    <li>Shopify</li>
+                    <li>Magento</li>
+                    <li>WooCommerce</li>
+                    <li>Sellerdeck</li>
+                    <li>Actinic</li>
+                    <li>BigCommerce</li>
+                    <li>EKM</li>
+                    <li>Netsuite SCA</li>
+                    <li>Volusion</li>
+                    <li>Squarespace</li>
+                </ul>
+                We look forward to hearing from you and ensuring that all of your questions are answered.
+            </p>
+        </div>
+    </div>
+</div>
+
+
 {% endblock %}
