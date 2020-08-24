@@ -36,6 +36,7 @@
                         <p class="mb-1 mt-0 small text-muted">Subtotal</p>
                     </div>
                 </div>
+                <!-- Show information from cart -->
                 {% for item in cart_items %}
                     <div class="row">
                         <div class="col-2 mb-1">
@@ -49,7 +50,12 @@
                         </div>
                         <div class="col-7">
                             <p class="my-0"><strong>{{ item.product.name }}</strong></p>
-                            <p class="my-0 small">Size: {% if item.product.has_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
+                            <!-- Include custom options -->
+                            <p class="my-0 small">
+                                {% if item.product.has_customtext %}Name: {{ item.customtext|upper }}{% endif %}
+                                {% if item.product.has_customtext2 %}Date: {{ item.customtext2|upper }}{% endif %}
+                                {% if item.product.has_customtext3 %}Quote: {{ item.customtext2|upper }}{% endif %}
+                            </p>
                             <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
                         </div>
                         <div class="col-3 text-right">
@@ -57,6 +63,7 @@
                         </div>
                     </div>
                 {% endfor %}
+                <!-- Total / shipping information -->
                 <hr class="my-0">
                 <div class="row text-black text-right">
                     <div class="col-7 offset-2">
@@ -71,6 +78,7 @@
                     </div>
                 </div>
             </div>
+            <!-- Personal details form using crispy forms-->
             <div class="col-12 col-lg-6">
                 <p class="text-muted">Please fill out the form below to complete your order</p>
                 <form action="{% url 'checkout' %}" method="POST" id="payment-form">
@@ -103,7 +111,7 @@
                     </fieldset>
                     <fieldset class="px-3">
                         <legend class="fieldset-label small text-black px-2 w-auto">Payment</legend>
-                        <!-- A Stripe card element will go here -->
+                        <!-- Stripe card element will go here -->
                         <div class="mb-3" id="card-element"></div>
 
                         <!-- Used to display form errors -->
@@ -111,7 +119,7 @@
                         <input type="hidden" value="{{ client_secret }}" name="client_secret">
 
                     </fieldset>
-
+                    <!-- Checkout buttons -->
                     <div class="submit-button text-right mt-5 mb-2">                    
 						<a href="{% url 'view_cart' %}" class="btn btn-graphicz rounded-0 p-3">
 							<span class="icon">
@@ -136,6 +144,7 @@
             </div>
         </div>
     </div>
+    <!-- Stripe loading overlay -->
     <div id="loading-overlay">
         <h1 class="text-light logo-font loading-spinner">
             <span class="icon">

@@ -1,3 +1,4 @@
+<!-- Form element in cart for adjusting quantity -->
 <form class="form update-form" method="POST" action="{% url 'adjust_cart' item.item_id %}">
     {% csrf_token %}
     <div class="form-group">
@@ -22,8 +23,15 @@
                     </span>
                 </button>
             </div>
+            <!-- Update quanities of specific product options -->
             {% if item.product.has_customtext %}
                 <input type="hidden" name="product_customtext" value="{{ item.customtext }}">
+            {% endif %}
+            {% if item.product.has_customtext2 %}
+                <input type="hidden" name="product_customtext2" value="{{ item.customtext2 }}">
+            {% endif %}
+            {% if item.product.has_customtext3 %}
+                <input type="hidden" name="product_customtext3" value="{{ item.customtext3 }}">
             {% endif %}
         </div>
     </div>

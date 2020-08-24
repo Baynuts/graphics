@@ -13,6 +13,7 @@
 {% block content %}
     <div class="overlay"></div>
     <div class="container mb-2">
+        <!-- Shopping cart heading -->
         <div class="row">
             <div class="col">
                 <hr>
@@ -25,6 +26,7 @@
             <div class="col">
                  {% if cart_items %}
                     <div class="table-responsive rounded">
+                        <!-- Cart table header -->
                         <table class="table table-sm table-borderless">
                             <thead class="text-black">
                                 <tr>
@@ -35,7 +37,7 @@
                                     <th scope="col">Subtotal</th>
                                 </tr>
                             </thead>
-
+                            <!-- Iterate through items -->
                             {% for item in cart_items %}
                                 <tr>
                                     <td class="p-3 w-25">
@@ -80,6 +82,7 @@
                                                             </span>
                                                         </button>
                                                     </div>
+                                                    <!-- Show customtext in cart -->
                                                     {% if item.product.has_customtext %}
                                                         <input type="hidden" name="product_customtext" value="{{ item.customtext }}">
                                                     {% endif %}
@@ -95,6 +98,7 @@
                                 </tr>
                             {% endfor %}
                             <tr>
+                                <!-- Show totals and delivery information -->
                                 <td colspan="5" class="pt-5 text-right">
                                     <h6><strong>Cart Total: £{{ total|floatformat:2 }}</strong></h6>
                                     <h6>Delivery: £{{ delivery|floatformat:2 }}</h6>
@@ -107,8 +111,9 @@
                                 </td>
                             </tr>
                             <tr>
+                                <!-- Base links -->
                                 <td colspan="5" class="text-right">
-                                    <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+                                    <a href="{% url 'products' %}" class="btn btn-graphicz rounded-0 btn-lg">
                                         <span class="icon">
                                             <i class="fas fa-chevron-left"></i>
                                         </span>

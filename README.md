@@ -15,7 +15,7 @@
 
 ## Description
 
-Creation of an eccomerce website which can sell and market products and services for a graphic designer. Contains database which holds user profiles, orders, products and portfolio examples.
+Creation of an ecommerce website which can sell and market products and services for a graphic designer. Contains database which holds user profiles, orders, products and portfolio examples.
 
 ## UX
 

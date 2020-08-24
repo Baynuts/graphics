@@ -13,6 +13,7 @@
 {% block content %}
     <div class="overlay"></div>
     <div class="container mb-2">
+        <!-- Cart heading -->
         <div class="row">
             <div class="col">
                 <hr>
@@ -27,21 +28,26 @@
                     <div class="d-block d-md-none">
                         <div class="row">
                             <div class="col">
+                                <!-- include -->
                                 {% include "cart/cart-total.html" %}
                             </div>
                         </div>
                         <div class="row">
                             <div class="col">
+                                <!-- include -->
                                 {% include "cart/checkout-buttons.html" %}
                                 <p class="text-muted mb-5">A summary of your cart contents is below</p>
                             </div>
                         </div>
+                        <!-- Iterate through cart objects and pull fields-->
                         {% for item in cart_items %}
                             <div class="row">
                                 <div class="col-12 col-sm-6 mb-2">
+                                    <!-- include -->
                                     {% include "cart/product-image.html" %}
                                 </div>
                                 <div class="col-12 col-sm-6 mb-2">
+                                    <!-- include -->
                                     {% include "cart/product-info.html" %}
                                 </div>
                                 <div class="col-12 col-sm-6 order-sm-last">
@@ -49,6 +55,7 @@
                                     <p><strong>Subtotal: </strong>${{ item.product.price | calc_subtotal:item.quantity }}</p>
                                 </div>
                                 <div class="col-12 col-sm-6">
+                                    <!-- include -->
                                     {% include "cart/quantity-form.html" %}
                                 </div>
                             </div>
@@ -64,6 +71,7 @@
                         <table class="table table-sm table-borderless">
                             <thead class="text-black">
                                 <tr>
+                                    <!-- Cart table headers -->
                                     <th scope="col">Product Info</th>
                                     <th scope="col"></th>
                                     <th scope="col">Price</th>
@@ -71,7 +79,7 @@
                                     <th scope="col">Subtotal</th>
                                 </tr>
                             </thead>
-
+                            <!-- Iterate through objects in cart -->
                             {% for item in cart_items %}
                                 <tr>
                                     <td class="p-3 w-25">
@@ -93,11 +101,13 @@
                             {% endfor %}
                             <tr>
                                 <td colspan="5" class="pt-5 text-right">
+                                    <!-- include -->
                                     {% include "cart/cart-total.html" %}
                                 </td>
                             </tr>
                             <tr>
                                 <td colspan="5" class="text-right">
+                                    <!-- include -->
                                     {% include "cart/checkout-buttons.html" %}
                                 </td>
                             </tr>
