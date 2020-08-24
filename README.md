@@ -151,50 +151,50 @@ The web app has been deployed to Heroku as the host, all secret keys and passwor
 ## Deployment
 The project has been deployed via Gitpod to the Heroku platform.
 
-Create account and log in to Heroku
-Press 'new' button > Create New App
-Choose app name : graphicz-drb
-Choose the region closest to your physical location
-Submit to create app.
+Create account and log in to Heroku  
+Press 'new' button > Create New App  
+Choose app name : graphicz-drb  
+Choose the region closest to your physical location  
+Submit to create app.  
 
-Open console in Gitpod to connect to the new heroku app.
-Ensure that requirements.txt and Profile are up to date.
-Type in terminal:  heroku login -i 
-Type in terminal:  heroku add remote heroku
-Enter app details
-Type in terminal:  git add .
-Type in terminal:  git commit -m "Commit message"
-Type in terminal:  git push heroku master
+Open console in Gitpod to connect to the new heroku app.  
+Ensure that requirements.txt and Profile are up to date.  
+Type in terminal:  heroku login -i   
+Type in terminal:  heroku add remote heroku  
+Enter app details  
+Type in terminal:  git add .  
+Type in terminal:  git commit -m "Commit message"  
+Type in terminal:  git push heroku master  
 
-The IDE is then connected to Heroku but you must run migrations for the models to be created and available.
-Type in terminal: heroku run python manage.py makemigrations
-Type in terminal: heroku run python manage.py migrate
+The IDE is then connected to Heroku but you must run migrations for the models to be created and available.  
+Type in terminal: heroku run python manage.py makemigrations  
+Type in terminal: heroku run python manage.py migrate  
 
-Open the Heroku site and attach the app to the Github repository
-This can be found under 'Deploy' > Connect to GitHub
-Following this each time the project is committed to Github the Heroku app will also get updated.
+Open the Heroku site and attach the app to the Github repository  
+This can be found under 'Deploy' > Connect to GitHub  
+Following this each time the project is committed to Github the Heroku app will also get updated.  
 
-Final stage is to create the environment variables directly in Heroku
-This can be found under 'Settings' > Config Vars
-All of your private keys can be entered in to here for the database (Postgres), AWS settings, Stripe keys and any other details that we will want to keep hidden from public view.
+Final stage is to create the environment variables directly in Heroku  
+This can be found under 'Settings' > Config Vars  
+All of your private keys can be entered in to here for the database (Postgres), AWS settings, Stripe keys and any other details that we will want to keep hidden from public view.  
 
-Configuration variable created
-AWS_ACCESS_KEY_ID access to Amazons web services bucket
-AWS_SECRET_ACCESS_KEY access to Amazons web services bucket
-DATABASE_URL holds database access information
-EMAIL_HOST_PASS used for sending emails
-EMAIL_HOST_USER used for sending emails
-SECRET_KEY Djangos secret key 
-STRIPE_PUBLIC_KEY used for stripe payments
-STRIPE_SECRET_KEY used for stripe payments
-STRIPE_WH_SECRET used for stripe payments
-USE_AWS boolean value to designate whether AWS is used or not
+Configuration variable created  
+AWS_ACCESS_KEY_ID access to Amazons web services bucket  
+AWS_SECRET_ACCESS_KEY access to Amazons web services bucket  
+DATABASE_URL holds database access information  
+EMAIL_HOST_PASS used for sending emails  
+EMAIL_HOST_USER used for sending emails  
+SECRET_KEY Djangos secret key   
+STRIPE_PUBLIC_KEY used for stripe payments  
+STRIPE_SECRET_KEY used for stripe payments  
+STRIPE_WH_SECRET used for stripe payments  
+USE_AWS boolean value to designate whether AWS is used or not  
 
-In the settings.py update the required information to use the environment variables.
+In the settings.py update the required information to use the environment variables.  
 
-Once details are correctly entered re commit the site, wait for Heroku to build the app and then open via Heroku dashboard > Open App.
+Once details are correctly entered re commit the site, wait for Heroku to build the app and then open via Heroku dashboard > Open App.  
 
-The code can be viewed using Heroku: https://graphicz-drb.herokuapp.com/
+The code can be viewed using Heroku: https://graphicz-drb.herokuapp.com/  
 
 ## Testing
 
@@ -204,9 +204,9 @@ The code can be viewed using Heroku: https://graphicz-drb.herokuapp.com/
 All errors have been resolved and now the code validates without any errors.
 
 #### Responsiveness
-The sites responsiveness has been tested using Chrome developer tools and mimiced using each device available within the software and also reducing the screen size. Additional media queries have been added to solve various sizing issues with text and images between the standard md and lg sizes to compensate for irregular sized devices.
-Manual test have been performed on various desktop and laptop screens as well as iPhone SE, iPhone 11, iPhone 6, iPhone 8, iPhone 5, Samsung Galaxy Tab, Samsung Galaxy Ace, iPad mini.
-With the standard sizes of the font throughout the site and my want to have elements spaced but without too much white space the sizes have been adjusted at various screen sizes to guarantee that the site looks correct at every screen size.
+The sites responsiveness has been tested using Chrome developer tools and mimiced using each device available within the software and also reducing the screen size. Additional media queries have been added to solve various sizing issues with text and images between the standard md and lg sizes to compensate for irregular sized devices.  
+Manual test have been performed on various desktop and laptop screens as well as iPhone SE, iPhone 11, iPhone 6, iPhone 8, iPhone 5, Samsung Galaxy Tab, Samsung Galaxy Ace, iPad mini.  
+With the standard sizes of the font throughout the site and my want to have elements spaced but without too much white space the sizes have been adjusted at various screen sizes to guarantee that the site looks correct at every screen size.  
 
 #### Browsers
 I have tested the site using the following browsers
