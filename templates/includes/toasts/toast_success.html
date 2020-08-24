@@ -25,7 +25,9 @@
                             {% endif %}
                         <div class="col-12">
                             <p class="my-0"><strong>{{ item.product.name }}</strong></p>
-                            <p class="my-0 small">Size: {% if item.product.has_customtext %}{{ item.customtext|upper }}{% else %}N/A{% endif %}</p>
+                            <p class="my-0 small">Name: {% if item.product.has_customtext %}{{ item.customtext|upper }}{% else %}N/A{% endif %}</p>
+                            <p class="my-0 small">Date: {% if item.product.has_customtext2 %}{{ item.customtext2|upper }}{% else %}N/A{% endif %}</p>
+                            <p class="my-0 small">Quote: {% if item.product.has_customtext2 %}{{ item.customtext3|upper }}{% else %}N/A{% endif %}</p>
                             <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
                         </div>
                     </div>

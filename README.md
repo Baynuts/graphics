@@ -99,6 +99,8 @@ Product detail page could include related or recommended items. This could be ea
 This would have been a great addition and very useful on the generic customised products such as leaflets / business cards. This would allow the upload of business details such as logos and styles and also help confirm neccessary details before payment is made.
 #### File upload from customer
 Unfortunately I ran out of time with this project but would have liked to add the functionality so that customers could upload their own image files. I believe that this would be a huge positive on the site as certain products on offer would alos be able to be designed by the customer and then the printing could be sold.
+#### Add app for onscreen editting of products
+This would be a large amount of work but would aid in the sale of goods by abling customers to create their own artwork.
 
 ## Technologies
 
