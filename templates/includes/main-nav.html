@@ -9,6 +9,7 @@
             <a class="nav-link mr-3" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Products
             </a>
+            <!--All products listed via criteria-->
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
                 <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
                 <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
@@ -21,6 +22,7 @@
             <a class="nav-link mr-3" href="#" id="advertising-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Advertising Media
             </a>
+            <!--Products by category-->
             <div class="dropdown-menu border-0" aria-labelledby="advertising-link">
                 <a href="{% url 'products' %}?category=menus" class="dropdown-item">Menus</a>
                 <a href="{% url 'products' %}?category=flyers" class="dropdown-item">Flyers</a>
@@ -33,6 +35,7 @@
             <a class="nav-link mr-3" href="#" id="personalised-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Personalised Artwork
             </a>
+            <!--Direct links to products-->
             <div class="dropdown-menu border-0" aria-labelledby="personalised-artwork-link">
                 <a href="{% url 'products' %}57" class="dropdown-item">Savour The Date</a>
                 <a href="{% url 'products' %}58" class="dropdown-item">Tied The Knot</a>
@@ -41,11 +44,6 @@
             </div>
         </li>
 
-        <li class="nav-item">
-            <a class="nav-link mr-3" href="{% url 'products' %}">
-                Graphic Design
-            </a>
-        </li>
         <li class="nav-item">
             <a class="nav-link" href="{% url 'portfolio' %}">
                 Portfolio
