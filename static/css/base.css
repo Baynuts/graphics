@@ -9,7 +9,7 @@ body {
 }
 
 
-
+/* Navigation styles */
 #topnav {
     background-color: #f9b61e;
     font-family: 'Montserrat', sans-serif;
@@ -44,7 +44,6 @@ body {
     border-bottom: none!important;
 }
 
-
 #bottomnav {
     color: #898989;
     background-color: #ffffff;
@@ -59,7 +58,6 @@ body {
 .std-font {
     font-family: 'Open Sans', sans-serif;
 }
-
 
 .icon {
     align-items: center;
@@ -101,7 +99,6 @@ body {
 
 }
 
-
 a.dropdown-item {
     color: #000;
     border-bottom: none!important;
@@ -117,7 +114,6 @@ a.dropdown-item {
     font-size: 16px;
     font-weight: 600;
  }
-
 
 
 /* Homepage styles */
@@ -182,6 +178,25 @@ p.sell-p {
     font-size: 0.8em;
 }
 
+.logo-txt {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    background-color: #f9b61e;
+    color: #fff;
+    padding: 5px;
+    font-family: montserrat;
+}
+
+a.homep-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover.homep-link {
+    color: #000;
+}
+
+
 /* Footer styles */
 
 footer.text-footer {
@@ -198,9 +213,6 @@ footer.text-footer {
 .graphic-yell {
     color: #f9b61e;
 }
-
-
-
 
 .shop-now-button {
     background: #f9b61e;
@@ -229,7 +241,6 @@ footer.text-footer {
 }
 
 
-
 /* Product list styles */
 
 .product-container {
@@ -239,7 +250,6 @@ footer.text-footer {
 .sort-by {
     border-color: #f9f9fa;
 }
-
 
 .object-fit-fill {
   object-fit: fill
@@ -251,6 +261,7 @@ footer.text-footer {
   	transition: all .9s ease;
   	position:relative;
 }
+
 .img-hover img:hover {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -262,12 +273,33 @@ footer.text-footer {
 width: 100%;
 }
 
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: white;
+	z-index: -1;
+}
+
+a.category-badge > span.badge:hover {
+    background: #212529 !important;
+    color: #fff !important;
+}
+
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 99999999999;
+}
+
 /* Porfolio styles */
 
 .card-port {
     height: 100%;
 }
-
 
 
 /* Product detail styles */
@@ -306,7 +338,6 @@ li.nav-item {
     line-height: 12px;
 }
 
-
 .product-title {
     font-size: 2em;
 }
@@ -316,7 +347,6 @@ i.fas.fa-star.mr-1 {
     font-size: 1.5em;
     padding-top: 10px;
 }
-
 
 a.nav-link.active {
     border-bottom: 4px solid #fdd000;
@@ -336,8 +366,6 @@ a.nav-link.active {
     color: #fff;
 }
 
-
-
 .btn-qty {
     background-color: #fdcc0d;
     padding: 5px;
@@ -354,19 +382,17 @@ a.nav-link.grp-link {
 }
 
 
-
 /* Toasts */
 
 .toast {
     max-width: 330px;
 }
 
-
-
+/* Button styles */
 
 .btn-outline-black {
     background: white;
-    color: black !important; /* use important to override link colors for <a> elements */
+    color: black !important; 
     border: 1px solid black;
 }
 
@@ -377,6 +403,7 @@ a.nav-link.grp-link {
     color: white !important;
 }
 
+/* Colour / Button styles */
 
 .text-black {
     color: #000 !important;
@@ -388,21 +415,6 @@ a.nav-link.grp-link {
 
 .bg-black {
     background: #000 !important;
-}
-
-.overlay {
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	position: fixed;
-	background: white;
-	z-index: -1;
-}
-
-a.category-badge > span.badge:hover {
-    background: #212529 !important;
-    color: #fff !important;
 }
 
 .btt-button {
@@ -423,12 +435,7 @@ a.category-badge > span.badge:hover {
     cursor: pointer;
 }
 
-.message-container {
-    position: fixed;
-    top: 72px;
-    right: 15px;
-    z-index: 99999999999;
-}
+/* Toast styles */
 
 .custom-toast {
     overflow: visible;
@@ -437,26 +444,6 @@ a.category-badge > span.badge:hover {
 .toast-capper {
     height: 2px;
 }
-
-
-.logo-txt {
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    background-color: #f9b61e;
-    color: #fff;
-    padding: 5px;
-    font-family: montserrat;
-}
-
-a.homep-link {
-    color: #fff;
-    text-decoration: none;
-}
-
-a:hover.homep-link {
-    color: #000;
-}
-
 
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
@@ -511,7 +498,7 @@ a:hover.homep-link {
 }
 
 
-/* Allauth form formatting */
+/* Allauth styles */
 
 .allauth-form-inner-content p {
     margin-top: 1.5rem; 
@@ -549,7 +536,6 @@ a:hover.homep-link {
     line-height: 1.5;
     border-radius: 0;
 
-    /* standard bootstrap btn transitions */
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
@@ -592,22 +578,8 @@ a:hover.homep-link {
     border-radius: 0;
 }
 
-
-
-
-
-
-
-
 /* -------------------------------- Media Queries */
 
-@media (min-width: 1327px) {
-
-}
-
-
-
-/* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
   .container {
     max-width: 80%;
@@ -615,41 +587,28 @@ a:hover.homep-link {
 }
 
 @media (max-width: 1300px) {
-
 .navbar {
     font-size: 0.8em;
 }
 }    
 
 @media (max-width: 1200px) {
-
 .logo-box {
     height: 75px;
     margin-left: 10%;
 }
 }    
 
-
-
-
 @media (max-width: 1080px) {
-
 h3.sell-points {
     font-size: 1.0rem;
 }
 .lead {
     font-size: 1rem;
 }
-
-
 }    
 
-
-
-
-/* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
-
     body {
         height: calc(100vh - 116px);
     }
@@ -703,36 +662,36 @@ h3.sell-points {
     border-bottom: none;
     }
 
-.logo {
-    text-align: center;
-}
+    .logo {
+        text-align: center;
+    }
 
-.navbar-nav .nav-link {
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
+    .navbar-nav .nav-link {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 
-.nav-item a {
-    border-bottom: none;
-    color: #fff;
-}
+    .nav-item a {
+        border-bottom: none;
+        color: #fff;
+    }
 
-a.dropdown-item {
-    color: #000;
-}
+    a.dropdown-item {
+        color: #000;
+    }
 
-.icon-block {
-    padding: 10px;
-    height: 151px;
-}
+    .icon-block {
+        padding: 10px;
+        height: 151px;
+    }
 
-.lead {
-    font-size: 0.8rem!important;
-}
+    .lead {
+        font-size: 0.8rem!important;
+    }
 
-a.buy-now-button.btn.rounded-0.float-right.text-uppercase.py-3 {
-    float: left!important;
-}
+    a.buy-now-button.btn.rounded-0.float-right.text-uppercase.py-3 {
+        float: left!important;
+    }
 
 }
 
