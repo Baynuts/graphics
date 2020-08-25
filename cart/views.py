@@ -16,10 +16,17 @@ def add_to_cart(request, item_id):
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
     customtext = None
+    customtext2 = None
+    customtext3 = None
     if 'product_customtext' in request.POST:
         customtext = request.POST['product_customtext']
     cart = request.session.get('cart', {})
-
+    if 'product_customtext2' in request.POST:
+        customtext = request.POST['product_customtext2']
+    cart = request.session.get('cart', {})
+    if 'product_customtext3' in request.POST:
+        customtext = request.POST['product_customtext3']
+    cart = request.session.get('cart', {})
 
     if customtext:
         if item_id in list(cart.keys()):

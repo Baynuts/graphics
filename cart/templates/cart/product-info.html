@@ -1,12 +1,12 @@
 <!-- Add custom fields in to cart -->
 <p class="my-0"><strong>{{ item.product.name }}</strong></p>
 {% if item.product.has_customtext %}
-<p class="my-0"><strong>Name: </strong>{{ item.customtext }}</p>                                        
+<p class="my-0"><strong>Name: </strong>{{ customtext }}</p>                                        
 {% endif %}
 {% if item.product.has_customtext2 %}
-<p class="my-0"><strong>Date: </strong>{{ item.customtext2 }}</p>                                        
+<p class="my-0"><strong>Date: </strong>{{ customtext2 }}</p>                                        
 {% endif %}
 {% if item.product.has_customtext3 %}
-<p class="my-0"><strong>Quote: </strong>{{ item.customtext3 }}</p>                                        
+<p class="my-0"><strong>Quote: </strong>{{ customtext3 }}</p>                                        
 {% endif %}
 <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
